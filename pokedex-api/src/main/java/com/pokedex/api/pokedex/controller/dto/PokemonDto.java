@@ -22,7 +22,7 @@ public class PokemonDto {
 		return url;
 	}
 
-	public static List<PokemonDto> converter(List<Pokemon> pokemons) {
+	public static List<PokemonDto> convert(List<Pokemon> pokemons) {
 		return pokemons.stream().map(PokemonDto::new).collect(Collectors.toList());
 	}
 	

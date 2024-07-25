@@ -19,8 +19,14 @@ public class PokemonController {
 	PokemonService service;
 
 	@GetMapping
-	public List<PokemonDto> listar() {
-		List<Pokemon> pokemons = service.listar();
-		return PokemonDto.converter(pokemons);
+	public List<PokemonDto> listar(String name) {
+
+		if (name == null) {
+			List<Pokemon> pokemons = service.list();
+			return PokemonDto.convert(pokemons);
+		}
+		
+		List<Pokemon> pokemons = service.list(name);
+		return PokemonDto.convert(pokemons);
 	}
 }

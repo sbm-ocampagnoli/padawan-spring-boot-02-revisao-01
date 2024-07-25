@@ -14,9 +14,12 @@ public class PokemonService {
 	@Autowired
 	PokemonRepository repository;
 
-	public List<Pokemon> listar() {
+	public List<Pokemon> list() {
 		return this.repository.findAll();
 	}
-	
+
+	public List<Pokemon> list(String name) {
+		return this.repository.findAllByName(name);
+	}
 	
 }
