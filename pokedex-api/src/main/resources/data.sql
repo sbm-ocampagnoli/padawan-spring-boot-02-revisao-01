@@ -1,8 +1,8 @@
-CREATE TABLE `pokemon` (
-  `id` INT AUTO_INCREMENT,
-  `name` VARCHAR(1024) NOT NULL,
-  `url` VARCHAR(1024) NOT NULL,
-  PRIMARY KEY (ID)
+CREATE TABLE IF NOT EXISTS pokemon (
+    id INT AUTO_INCREMENT,
+    name VARCHAR(1024),
+    url VARCHAR(1024),
+    PRIMARY KEY (id)
 );
 
 INSERT INTO `pokemon` (`name`,`url`)
