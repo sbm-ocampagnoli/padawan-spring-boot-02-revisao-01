@@ -1,6 +1,8 @@
 CREATE TABLE `pokemon` (
-  `name` VARCHAR(1024),
-  `url` VARCHAR(1024)
+  `id` INT AUTO_INCREMENT,
+  `name` VARCHAR(1024) NOT NULL,
+  `url` VARCHAR(1024) NOT NULL,
+  PRIMARY KEY (ID)
 );
 
 INSERT INTO `pokemon` (`name`,`url`)

@@ -1,4 +1,4 @@
-package com.pokedex.api.pokedex_api;
+package com.pokedex.api.pokedex;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
