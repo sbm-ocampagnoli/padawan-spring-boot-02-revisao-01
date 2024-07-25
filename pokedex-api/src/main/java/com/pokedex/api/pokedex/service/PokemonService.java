@@ -21,5 +21,9 @@ public class PokemonService {
 	public List<Pokemon> list(String name) {
 		return this.repository.findAllByName(name);
 	}
+
+	public Pokemon add(Pokemon pokemon) {
+		return this.repository.save(pokemon);
+	}
 	
 }
