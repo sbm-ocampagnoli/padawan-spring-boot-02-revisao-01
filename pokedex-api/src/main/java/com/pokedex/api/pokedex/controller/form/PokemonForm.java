@@ -1,13 +1,17 @@
 package com.pokedex.api.pokedex.controller.form;
 
+import org.hibernate.validator.constraints.Length;
+
 import com.pokedex.api.pokedex.model.Pokemon;
 
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 
 public class PokemonForm {
 
 	@NotNull
+	@Length(min = 2)
 	private String name;
 	@NotNull
 	private String url;
