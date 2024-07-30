@@ -17,6 +17,7 @@ import com.pokedex.api.pokedex.controller.form.PokemonForm;
 import com.pokedex.api.pokedex.model.Pokemon;
 import com.pokedex.api.pokedex.service.PokemonService;
 
+import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 
 @RestController
@@ -39,6 +40,7 @@ public class PokemonController {
 	}
 
 	@PostMapping
+	@Transactional
 	public ResponseEntity<PokemonDto> add(@RequestBody @Valid PokemonForm form, UriComponentsBuilder uriBuilder) {
 
 		Pokemon pokemon = form.convert(form);
