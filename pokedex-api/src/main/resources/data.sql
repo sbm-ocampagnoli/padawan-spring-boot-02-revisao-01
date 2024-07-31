@@ -22,7 +22,8 @@ VALUES
 ('weedle','https://pokeapi.co/api/v2/pokemon/13/'),
 ('kakuna','https://pokeapi.co/api/v2/pokemon/14/'),
 ('beedrill','https://pokeapi.co/api/v2/pokemon/15/'),
-('pidgey','https://pokeapi.co/api/v2/pokemon/16/'),
+('pidgey','https://pokeapi.co/api/v2/pokemon/16/')
+/*
 ('pidgeotto','https://pokeapi.co/api/v2/pokemon/17/'),
 ('pidgeot','https://pokeapi.co/api/v2/pokemon/18/'),
 ('rattata','https://pokeapi.co/api/v2/pokemon/19/'),
@@ -1309,3 +1310,4 @@ VALUES
 ('ogerpon-cornerstone-mask','https://pokeapi.co/api/v2/pokemon/10275/'),
 ('terapagos-terastal','https://pokeapi.co/api/v2/pokemon/10276/'),
 ('terapagos-stellar','https://pokeapi.co/api/v2/pokemon/10277/');
+*/
